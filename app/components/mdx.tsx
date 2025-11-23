@@ -164,15 +164,16 @@ const components = {
 };
 
 interface MdxProps {
-	code: string;
+code: string;
+	components?: typeof components;
 }
 
-export function Mdx({ code }: MdxProps) {
+export function Mdx({ code, components: customComponents }: MdxProps) {
 	const Component = useMDXComponent(code);
 
-	return (
-		<div className="mdx">
-			<Component components={components} />
-		</div>
+return (
+<div className="mdx">
+ <Component components={customComponents || components} />
+ </div>
 	);
 }

@@ -5,6 +5,7 @@ import Particles from "./components/particles";
 const navigation = [
   { name: "Projects", href: "https://github.com/Navdeep-Codes" },
   { name: "Blog", href: "/blog" },
+  { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
 
